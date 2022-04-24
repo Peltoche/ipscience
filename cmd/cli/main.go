@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"os"
+
+	"github.com/Peltoche/ipscience/cmd/cli/commands"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	app := commands.NewApp()
+
+	os.Exit(app.Run(os.Args, os.Stdout))
 }
