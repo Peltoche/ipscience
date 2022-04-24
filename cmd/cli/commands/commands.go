@@ -7,5 +7,5 @@ import (
 func NewApp() cli.App {
 
 	return cli.New("ipscience").
-		WithCommand(FetchMetadatas())
+		WithCommand(WorkCmd())
 }
