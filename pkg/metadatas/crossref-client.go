@@ -34,14 +34,12 @@ func (c *CrossRefClient) FetchWork(ctx context.Context, doi string) (*Work, erro
 		Editors:   []*Contributor{},
 		Date:      work.Date,
 		Publisher: work.Publisher,
-		Issue:     work.Issue,
 		Volume:    work.Volume,
 		Pages:     work.Pages,
 		ISSNs:     work.ISSNs,
 		ISSN:      work.ISSN,
 		ISBNs:     work.ISBNs,
 		ISBN:      work.ISSN,
-		Abstract:  work.Abstract,
 	}
 
 	for _, author := range work.Authors {

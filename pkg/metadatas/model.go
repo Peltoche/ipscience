@@ -15,14 +15,12 @@ type Work struct {
 
 	Publisher string `json:"publisher"`
 
-	Issue    string   `json:"issue"`
-	Volume   string   `json:"volume"`
-	Pages    string   `json:"page"`
-	ISSNs    []string `json:"ISSN"`
-	ISSN     string
-	ISBNs    []string `json:"ISBN"`
-	ISBN     string
-	Abstract string `json:"abstract"`
+	Volume string   `json:"volume"`
+	Pages  string   `json:"page"`
+	ISSNs  []string `json:"ISSN"`
+	ISSN   string
+	ISBNs  []string `json:"ISBN"`
+	ISBN   string
 }
 
 type Contributor struct {
